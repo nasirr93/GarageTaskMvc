@@ -1,0 +1,28 @@
+﻿
+@using GarageTaskMvc.Models;
+@model List<Product>
+
+
+
+<table class="table caption-top">
+    <caption>List of users</caption>
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Count</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id.</th>
+                <td>@item.Name</td>
+                <td>@item.Count</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
